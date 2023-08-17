@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=karla:wght@400;700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-size: 16px;
+   font-family: "Karla";
+}
+
+main{
+    display: flex;
+    flex-flow: column nowrap;
+    /* justify-content: center; */
+    align-items: stretch;
+    max-height: 100vh;
+    
+}
+p{
+    color: hsl(204, 43%, 93%);
+}
+.card1 p{
+    color: hsl(218, 22%, 67%);
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.card1, .card2, .card3{
+    display: flex;
+    flex-flow: column  ;
+    flex: 1;
+    padding: 20px ;
+    /* min-width: min-content; */
+    /* align-items: stretch; */
+
+}
+.card2{
+    background-color:hsl(179, 62%, 43%) ;
+}
+.card3{
+    background-color: hsl(179, 57%, 49%);;
+}
+ 
+.card1 h1{
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 1.3rem;
+   
+}
+.card1 h2{
+    color: hsl(71, 73%, 54%);
+    margin-bottom:20px ;
+    
+    
+}
+.card2 h1{
+    font-size: 1.3rem;
+    color: hsl(204, 43%, 93%);
+    margin-bottom:20px ;
+}
+.card2 p{
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.card2 p span{
+    color: hsl(204, 43%, 93%);
+    margin-top: 500px;
+    font-size: 0.8rem;
+    margin-left: 5px;
+    font-weight: 400;
+    
+}
+.card2 :nth-child(3){
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: -10px;
+}
+button{
+    border: none;
+    min-height: 50px;
+    border-radius: 0.5rem;
+    background-color:hsl(71, 73%, 54%) ;
+    color: hsl(204, 43%, 93%);
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.card3 h1{
+    font-size: 1.3rem;
+    color: hsl(204, 43%, 93%);
+    margin-bottom:20px ;
+}
+
+.card3 p{
+    /* text-align: justify; */
+    background-color: ;
+   
+
+}
+.card3{
+    /* align-items: stretch; */
+}
+@media (min-width:600px ){
+    main{
+        display: grid;
+        grid-template-areas: 
+        "card1 card1"
+        "card2 card3";
+        margin: auto;
+       
+        
+    }
+    .card2{
+        grid-area: card2;
+        
+    }
+    .card3{
+        grid-area: card3;
+    }
+    {}
+
+    .card2, .card3{
+        
+
+
+    }
+}
+
+/* 
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Karla](https://fonts.google.com/specimen/Karla)
+- Weights: 400, 700 */
